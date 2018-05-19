@@ -1,0 +1,63 @@
+Note:
+TyperShark game
+GUI prog report
+
+Our program:
+
+-can instantiate scuba diver(or the player) at a given position in the frame
+-can instantiate one shark with a given position in the frame and with a given speed
+-has JPanel on the North part of the frame where the score, level and life will be displayed
+-can instantiate groups of sharks(not just one) with different yPos.
+-has background picture
+-can have randomized words inside Shark objects
+
+-has implemented keyListeners
+-has panel on the bottom that displays the current word the user is typing
+-has piranhas (and can instantiate them multiple times like the shark)
+-increase points on every shark/piranha kill
+-life decreases when shark reaches the end of the map
+
+-existing bug was removed; game needs to have a background image so it would disappear
+
+-input is now limited; letters can only be typed
+-input is automatically set to small caps
+
+- has an added DepthTimer class:
+    > timer-based used to keep track of the depth of the player
+    > panel on the left or west part, where the level/depth of the ocean can be seen
+- can arrange the classes into a package file :3
+- has player animated sprite
+- modified the UnderWater class:
+	> whenever the depth increases, the background image gets darker and darker in blue
+- removed the Word interface: the interface isn't useful
+
+
+05/21 Updates:
+	-has a Boss level wherein the boss fires missiles to the scuba diver. This is at level 15(final level)
+	-The missiles being fired by the boss will change direction whenever the user typed the word correctly. This can decrease the boss' life once the missile reaches the boss.
+	-This, however, will decrease the player's life if the user is not able to type the word correctly.
+	-the game ends if the player dies, life < 0
+
+05/22 Updates:
+	-asks the name of the user after the game
+	-saves the score of the player after finishing/losing the game regardless if top score or not
+	-saving is still terminal based
+
+BUGS:
+	> SeaCreature moves at a different y-position whenever a key is pressed
+		Cause: unknown
+		Solution: added a background image
+	>
+
+THINGS TO DO
+	-improve the "GAME OVER"
+	-randomized power up among sea creatures
+	-highscore class
+	-persistence, record high score, save game
+	-improve GUI and add animated sprites
+	-load the top scores
+	-display top scores on high scores menu
+
+
+Suggestions? :3
+-can we use GIF to make characters look like they are moving. (DONE)
